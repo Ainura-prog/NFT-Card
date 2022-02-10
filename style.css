@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+:root {
+    --oxford-blue: hsl(217, 54%, 11%);
+    --Light-oxford-blue: hsl(216, 50%, 16%);
+    --indigo-dye: hsl(215, 32%, 27%);
+    --blue-yonder: hsl(218, 30%, 89%);
+    --aqua: hsl(178, 100%, 50%);
+    --white: hsl(0, 0%, 100%);
+}
+
+
+/* body {
+  font-family: "Outfit", sans-serif;
+  background-color: var(--oxford-blue);
+  min-height: 100vh;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.card {
+    background-color: var(--Light-oxford-blue);
+    max-width: 350px;
+    padding: 24px;
+    border-radius: 15px;
+    box-shadow: 0px 20px 15px 15px rgb(0, 0, 0, 0.05), 0px 40px 30px 5px rgb(0, 0, 0, 0.01);
+}
+
+.card-product-image {
+    position: relative;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.card-product-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card-body {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--indigo-dye);
+}
+
+.card-body a {
+    color: var(--white);
+}
+
+.card-body h3:hover {
+    color: var(--aqua);
+}
+
+.card-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+
+.card-body .card-text {
+    font-size: 18px;
+    color: var(--blue-yonder);
+    margin-bottom: 23px;
+    line-height: 1.5;
+    text-transform: capitalize;
+}
+
+.card-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-wrapper .card-price,
+.card-wrapper .card-countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.card-wrapper .card-price img,
+.card-wrapper .card-countdown img {
+    margin-right: 6px;
+}
+
+.card-wrapper .card-price span {
+    color: var(--aqua);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.card-wrapper .card-countdown span {
+    color: var(--blue-yonder);
+}
+
+.card-footer {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.card-footer img {
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.card-footer p {
+    color: var(--blue-yonder);
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.card-footer p a {
+    color: var(--white);
+    font-weight: 700;
+}
+
+.card-footer p a:hover {
+    color: var(--aqua);
+}
